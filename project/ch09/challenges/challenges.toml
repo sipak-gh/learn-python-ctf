@@ -1,0 +1,467 @@
+# challenges.toml -- the curated, retired, organizer-published CTF challenges
+# used by "Learn Python for CTFs", each pinned to an exact commit.
+#
+# IMPORTANT (licensing): challenge files are NOT committed to this repo. This
+# manifest only records *where* each challenge lives so `fetch.py` can pull it
+# to your machine on demand (into challenges/<name>/, which is gitignored).
+# Attribution + license for each is in Appendix D.
+#
+# Every entry:
+#   repo   = "owner/name"      GitHub repository
+#   commit = "<40-hex>"        pinned commit (reproducible fetch)
+#   path   = "dir/in/repo"     directory to download (whole subtree)
+#   category / difficulty / needs_service / license  = metadata for Appendix D
+#   event / author            = attribution
+
+# ----------------------------------------------------------------------------
+# Category 1 -- Encodings & scripting
+# ----------------------------------------------------------------------------
+[pyny]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/pyny"
+category = "encoding"
+difficulty = "very-easy"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[welcome-to-ductf]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/welcome-to-ductf"
+category = "encoding"
+difficulty = "easy"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[complementary]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/complementary"
+category = "encoding"
+difficulty = "easy"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+# ----------------------------------------------------------------------------
+# Category 2 -- Crypto
+# ----------------------------------------------------------------------------
+[rsa]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Crypto/rsa"
+category = "crypto"
+difficulty = "very-easy"
+needs_service = false
+event = "ImaginaryCTF 2023"
+author = "Eth007 (ImaginaryCTF)"
+license = "no license; organizer-published for practice"
+
+[greek-cipher]
+repo = "uclaacm/lactf-archive"
+commit = "3379d4a7b36680764a34e7dc817cc3c94c244764"
+path = "2023/crypto/greek-cipher"
+category = "crypto"
+difficulty = "easy"
+needs_service = false
+event = "LA CTF 2023"
+author = "ACM Cyber at UCLA"
+license = "MIT (Copyright (c) 2024 ACM at UCLA)"
+
+[randomly-chosen]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/randomly-chosen"
+category = "crypto"
+difficulty = "easy"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[one-more-time-pad]
+repo = "uclaacm/lactf-archive"
+commit = "3379d4a7b36680764a34e7dc817cc3c94c244764"
+path = "2023/crypto/one-more-time-pad"
+category = "crypto"
+difficulty = "easy"
+needs_service = false
+event = "LA CTF 2023"
+author = "ACM Cyber at UCLA"
+license = "MIT (Copyright (c) 2024 ACM at UCLA)"
+
+[primary-knowledge]
+repo = "hackthebox/cyber-apocalypse-2024"
+commit = "4e59eec7a4919d2a4ae4f5d98ecf8ba153ac464a"
+path = "crypto/[Very Easy] Primary Knowledge"
+category = "crypto"
+difficulty = "easy"
+needs_service = false
+event = "HTB Cyber Apocalypse 2024"
+author = "HackTheBox"
+license = "no license; HTB official write-up repo"
+
+[apbq-rsa-i]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "crypto/apbq-rsa-i"
+category = "crypto"
+difficulty = "medium"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers (joseph)"
+license = "no license; organizer-published for practice"
+
+[handshake]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "crypto/handshake"
+category = "crypto"
+difficulty = "medium"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[pprngc]
+repo = "uclaacm/lactf-archive"
+commit = "3379d4a7b36680764a34e7dc817cc3c94c244764"
+path = "2024/crypto/pprngc"
+category = "crypto"
+difficulty = "medium-hard"
+needs_service = true
+event = "LA CTF 2024"
+author = "ACM Cyber at UCLA"
+license = "MIT (Copyright (c) 2024 ACM at UCLA)"
+
+[encrypted-mail]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "crypto/encrypted-mail"
+category = "crypto"
+difficulty = "hard"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+# ----------------------------------------------------------------------------
+# Category 3 -- Reversing
+# ----------------------------------------------------------------------------
+[goated]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Reversing/goated"
+category = "rev"
+difficulty = "medium"
+needs_service = false
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[impossible]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "misc/impossible"
+category = "rev"
+difficulty = "medium"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[snailchecker]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Reversing/snailchecker"
+category = "rev"
+difficulty = "medium-hard"
+needs_service = false
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+# ----------------------------------------------------------------------------
+# Category 4 -- Pyjail
+# ----------------------------------------------------------------------------
+[helpless]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/helpless"
+category = "pyjail"
+difficulty = "very-easy"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[not-a-pyjail]
+repo = "DownUnderCTF/Challenges_2022_Public"
+commit = "2213706f1a93120bd58b3e47076611d80341c76c"
+path = "misc/not-a-pyjail"
+category = "pyjail"
+difficulty = "easy"
+needs_service = true
+event = "DownUnderCTF 2022"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[pycrib]
+repo = "ImaginaryCTF/ImaginaryCTF-2022-Challenges"
+commit = "ac2f0aa796a651e0eb730db12c3550e4470d4e9c"
+path = "Misc/pycrib"
+category = "pyjail"
+difficulty = "easy-medium"
+needs_service = true
+event = "ImaginaryCTF 2022"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[get_and_set]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Misc/get_and_set"
+category = "pyjail"
+difficulty = "medium"
+needs_service = true
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[you_shall_not_call]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Misc/you_shall_not_call"
+category = "pyjail"
+difficulty = "hard"
+needs_service = true
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+# ----------------------------------------------------------------------------
+# Category 5 -- Web
+# ----------------------------------------------------------------------------
+[parrot-the-emu]
+repo = "DownUnderCTF/Challenges_2024_Public"
+commit = "f2797a33d8f5851508f37e854afceedf85eee8a3"
+path = "beginner/parrot-the-emu"
+category = "web"
+difficulty = "easy"
+needs_service = true
+event = "DownUnderCTF 2024"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[minigolf]
+repo = "ImaginaryCTF/ImaginaryCTF-2022-Challenges"
+commit = "ac2f0aa796a651e0eb730db12c3550e4470d4e9c"
+path = "Web/minigolf"
+category = "web"
+difficulty = "easy"
+needs_service = true
+event = "ImaginaryCTF 2022"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[sstigolf]
+repo = "ImaginaryCTF/ImaginaryCTF-2022-Challenges"
+commit = "ac2f0aa796a651e0eb730db12c3550e4470d4e9c"
+path = "Web/sstigolf"
+category = "web"
+difficulty = "medium"
+needs_service = true
+event = "ImaginaryCTF 2022"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[were-pickle-phreaks]
+repo = "hackthebox/cyber-apocalypse-2024"
+commit = "4e59eec7a4919d2a4ae4f5d98ecf8ba153ac464a"
+path = "misc/[Easy] Were Pickle Phreaks"
+category = "web"
+difficulty = "medium"
+needs_service = true
+event = "HTB Cyber Apocalypse 2024"
+author = "HackTheBox"
+license = "no license; HTB official write-up repo"
+
+[were-pickle-phreaks-revenge]
+repo = "hackthebox/cyber-apocalypse-2024"
+commit = "4e59eec7a4919d2a4ae4f5d98ecf8ba153ac464a"
+path = "misc/[Medium] Were Pickle Phreaks Revenge"
+category = "web"
+difficulty = "hard"
+needs_service = true
+event = "HTB Cyber Apocalypse 2024"
+author = "HackTheBox"
+license = "no license; HTB official write-up repo"
+
+# ----------------------------------------------------------------------------
+# Category 6 -- Forensics
+# ----------------------------------------------------------------------------
+[blurry]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Forensics/blurry"
+category = "forensics"
+difficulty = "easy"
+needs_service = false
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[blinky-bill]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/blinky-bill"
+category = "forensics"
+difficulty = "easy"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[whack-a-frog]
+repo = "Crusaders-of-Rust/corCTF-2022-public-challenge-archive"
+commit = "2eaff37d7337fcf6c8a221b415e2f6eed5fafafb"
+path = "forensics/whack-a-frog"
+category = "forensics"
+difficulty = "easy-medium"
+needs_service = false
+event = "corCTF 2022"
+author = "Crusaders of Rust"
+license = "AGPL-3.0 (repo-wide)"
+
+[forensics]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Forensics/forensics"
+category = "forensics"
+difficulty = "medium"
+needs_service = false
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[steganographic]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Forensics/steganographic"
+category = "forensics"
+difficulty = "medium-hard"
+needs_service = false
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+# ----------------------------------------------------------------------------
+# Category 7 -- Pwn
+# ----------------------------------------------------------------------------
+[one-byte]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/one-byte"
+category = "pwn"
+difficulty = "easy"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[downunderflow]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "beginner/downunderflow"
+category = "pwn"
+difficulty = "easy"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[ret2win]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Pwn/ret2win"
+category = "pwn"
+difficulty = "easy"
+needs_service = true
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[form]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Pwn/form"
+category = "pwn"
+difficulty = "easy-medium"
+needs_service = true
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+[safe-calculator]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "pwn/safe-calculator"
+category = "pwn"
+difficulty = "medium"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[minimal]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Pwn/minimal"
+category = "pwn"
+difficulty = "hard"
+needs_service = true
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"
+
+# ----------------------------------------------------------------------------
+# Optional stretch / bonus challenges
+# ----------------------------------------------------------------------------
+[apbq-rsa-ii]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "crypto/apbq-rsa-ii"
+category = "crypto"
+difficulty = "hard (stretch)"
+needs_service = false
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[daas]
+repo = "DownUnderCTF/Challenges_2023_Public"
+commit = "b48f83db2984bc7fa2ec7879a32d7efb1be8d333"
+path = "misc/daas"
+category = "rev"
+difficulty = "hard (stretch)"
+needs_service = true
+event = "DownUnderCTF 2023"
+author = "DownUnderCTF organisers"
+license = "no license; organizer-published for practice"
+
+[you_shall_not_call-revenge]
+repo = "ImaginaryCTF/ImaginaryCTF-2023-Challenges"
+commit = "4a1b779026c3b69a71bef1c8c29eb2e9f8dbee7e"
+path = "Misc/you_shall_not_call-revenge"
+category = "pyjail"
+difficulty = "hard (stretch)"
+needs_service = true
+event = "ImaginaryCTF 2023"
+author = "ImaginaryCTF organisers"
+license = "no license; organizer-published for practice"

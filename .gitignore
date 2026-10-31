@@ -1,0 +1,25 @@
+# Python virtualenv
+.venv/
+venv/
+
+# Fetched challenges: pulled at runtime by challenges/fetch.py, never committed.
+# Keep only the fetcher, the manifest, and the placeholder.
+challenges/*
+!challenges/fetch.py
+!challenges/challenges.toml
+!challenges/.gitkeep
+
+# Python caches / build artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Scratch output written by runnable examples (regenerated on each run)
+_scratch/
+
+# Local tooling noise
+.DS_Store

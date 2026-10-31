@@ -1,0 +1,16 @@
+# Pinned to what was verified on Python 3.10 / Ubuntu 22.04 (WSL2).
+# Install into a venv:  python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+pwntools==4.15.0
+pycryptodome==4.2.0
+requests==2.34.2
+scapy==2.8.0
+Pillow==12.3.0
+numpy==2.2.6
+scipy==1.15.3
+sympy==1.14.0
+pyzbar==0.1.9
+# Reversing (ch07). decompyle3 pulls in xdis + spark-parser.
+decompyle3==3.9.3
+# Testing
+pytest==8.4.2
+tomli==2.5.0
